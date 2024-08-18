@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header>
-            <h1>요리조리액트 교실</h1>
+            <p className="title">요리조리</p>&nbsp;액트<p className="title">교실</p>
         </header>
     );
 }

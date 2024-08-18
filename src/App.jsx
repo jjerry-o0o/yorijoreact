@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="main">
         <Header />
         <main>
           <section>
@@ -35,7 +35,7 @@ function App() {
               ) : (
                   RECIPE_CONTENTS.filter(item => item.title === selectedMenu)
                       .map((item) => (
-                          <Recipe key={item.title} {...item}/>
+                          <Recipe key={item.title} {...item} setSelectedMenu={setSelectedMenu}/>
                       ))
               )}
           </section>
